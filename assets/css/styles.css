@@ -70,6 +70,8 @@ a {
   margin-inline: 1.5rem;
 }
 
+
+
 /*=============== HEADER ===============*/
 .header {
   position: fixed;
@@ -134,6 +136,71 @@ a {
 
 .nav__close {
   opacity: 0;
+}
+
+/*=============== COLUMNS ===============*/
+
+/* Flexbox Container for Columns */
+.row {
+    display: flex; /* Enables Flexbox */
+    justify-content: space-between; /* Spreads the columns out */
+    max-width: 1200px; /* Limits the container width */
+    margin: 100px auto; /* Centers the container */
+    padding: 0 20px; /* Inner padding on the sides */
+}
+
+/* Individual Column Styling */
+.column {
+    /* flex-grow: 1; Makes all columns take equal available space */
+    /* flex-basis: 30%; Gives a starting width of 30% */
+    flex: 1; /* Shorthand for flex-grow: 1, flex-shrink: 1, flex-basis: 0% (or use 30% for cleaner spacing) */
+    
+    margin: 0 10px; /* Space between columns */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    opacity: 0.8;;
+}
+
+/* Column Title Styling */
+.column h3 {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+/* --- NEW Button Styling --- */
+
+.button {
+    /* Style the link as a button */
+    display: inline-block; /* Allows setting width and padding */
+    padding: 10px 20px;
+    margin-top: 15px; /* Space above the button */
+    background-color: #28a745; /* Green background */
+    color: white;
+    text-align: center;
+    text-decoration: none; /* Removes the underline from the link */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Media Query for Responsiveness */
+/* Stacks the columns vertically on small screens (like phones) */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stacks items on top of each other */
+        padding: 0;
+    }
+
+    .column {
+        margin: 10px 20px; /* More vertical margin */
+    }
 }
 
 /* Navigation for mobile devices */
