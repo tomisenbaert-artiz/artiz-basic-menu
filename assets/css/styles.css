@@ -160,7 +160,7 @@ a {
     background-color: white;
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    opacity: 0.8;;
+    opacity: 0.8;
 }
 
 /* Column Title Styling */
@@ -202,6 +202,26 @@ a {
         margin: 10px 20px; /* More vertical margin */
     }
 }
+
+/*=============== END COLUMNS ===============*/
+
+/*=============== FOOTER ===============*/
+
+.footer {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  max-width: 1200px; /* Limits the container width */
+  margin: 100px auto; /* Centers the container */
+  padding: 20px 20px; /* Inner padding on the sides */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  opacity: 0.8;
+}
+
+
 
 /* Navigation for mobile devices */
 @media screen and (max-width: 1118px) {
